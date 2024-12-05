@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-body {
+body, .body {
     font-family: Roboto;
     font-size: 18px;
     margin: 0;
@@ -9,7 +9,7 @@ body {
     flex-direction: column;
 }
 
-header, .top, footer{
+header, .top, footer {
     background-color: #1F2937;
 }
 
@@ -21,11 +21,6 @@ header, .top, footer{
     font-size: 36px;
     font-style: italic;
     color: #1F2937
-}
-
-ul {
-    display: flex;
-    justify-content: space-between;
 }
 
 .title {
@@ -41,7 +36,10 @@ ul {
 
 .logo {
     font-size: 24px;
+    font-weight: bold;
     color: #F9FAF8;
+    margin-right: auto;
+    padding: 16px;
 }
 
 .button {
@@ -52,4 +50,72 @@ ul {
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #E5E7EB;
+}
+
+.quote {
+    padding: 80px;
+}
+
+.quote-author {
+    text-align: right;
+}
+
+/* Flex section starts here */
+
+header {
+    display: flex;
+}
+
+ul {
+    display: flex;
+    gap: 18px;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+    flex-wrap: wrap;
+}
+
+.info-container {
+    display: flex;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.modal {
+    background-color: #3882F6;
+    display: flex;
+    padding: 50px;
+    margin: 100px;
+    border-radius: 10px;
+}
+
+.text {
+    color: #F9FAF8;
 }
