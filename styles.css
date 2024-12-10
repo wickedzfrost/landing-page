@@ -42,14 +42,10 @@ header, .top, footer {
     padding: 16px;
 }
 
-.button {
-    color: #3882F6;
-}
-
 .info-title {
     font-size: 36px;
     font-weight: 900;
-    color: #1F2937;
+    color: #1f2937;
 }
 
 ul {
@@ -59,7 +55,7 @@ ul {
 a {
     font-size: 18px;
     text-decoration: none;
-    color: #E5E7EB;
+    color: #e5e7eb;
 }
 
 .quote {
@@ -69,6 +65,21 @@ a {
 .quote-author {
     text-align: right;
 }
+
+footer {
+    padding: 50px;
+    text-align: center;
+    color: #E5E7EB;
+}
+
+.info img {
+    width: 150px;
+    height: auto;
+    border: 3px solid #3882F6;
+    border-radius: 5px;
+}
+
+/* REMINDER TO LINK THE IMAGE SOURCE */
 
 /* Flex section starts here */
 
@@ -88,19 +99,43 @@ ul {
 
 .container {
     display: flex;
-    flex-direction: column;
     margin: 100px;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .info-container {
     display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.button {
+    border: 0;
+    border-radius: 5px;
+    width: 100px;
+    background-color: #3882F6;
+    padding: 10px;
+    margin-right: 300px;
+    color: #F9FAF8;
+}
+
+.info-title {
+    text-align: center;
+}
+
+.image {
+    width: 500px;
+    height: auto;
+    margin: 100px;
 }
 
 .info {
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 150px;
 }
 
 .bottom {
